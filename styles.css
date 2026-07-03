@@ -125,14 +125,14 @@ a {
   object-fit: cover;
   object-position: center;
   z-index: 0;
-  filter: brightness(0.8) saturate(1.08);
-  transform: scale(1.08);
+  filter: brightness(0.62) saturate(0.95);
+  transform: scale(1.06);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.45) 100%);
   z-index: 1;
 }
 
@@ -154,8 +154,8 @@ a {
 .hero-content h1,
 .hero-content .hero-text,
 .hero-content .eyebrow {
-  color: #f9f7f1;
-  text-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
+  color: #fdf8f0;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .eyebrow {
