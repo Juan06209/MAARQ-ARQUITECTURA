@@ -125,7 +125,7 @@ a {
   object-fit: cover;
   object-position: center;
   z-index: 0;
-  filter: brightness(0.62) saturate(0.95);
+  filter: brightness(0.56) saturate(0.9);
   transform: scale(1.06);
 }
 
@@ -155,7 +155,7 @@ a {
 .hero-content .hero-text,
 .hero-content .eyebrow {
   color: #fdf8f0;
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 12px 36px rgba(0, 0, 0, 0.7);
 }
 
 .eyebrow {
@@ -177,7 +177,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.2rem, 4.5vw, 4.3rem);
+  font-size: clamp(2.4rem, 4.8vw, 4.7rem);
 }
 
 h2 {
