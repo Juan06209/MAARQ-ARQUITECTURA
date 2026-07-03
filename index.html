@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAARQ Arquitectura</title>
+    <meta
+      name="description"
+      content="Estudio de arquitectura y diseño de interiores en Corozal, Sucre."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Inicio MAARQ Arquitectura">
+          <img src="multimedia/logo.jpeg" alt="Logo MAARQ Arquitectura" />
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="#home">Inicio</a>
+          <a href="#portfolio">Proyectos</a>
+          <a href="#about">Nosotros</a>
+          <a href="#services">Servicios</a>
+          <a href="#process">Proceso</a>
+          <a href="#contact">Contacto</a>
+          <div class="header-social">
+            <a href="https://wa.me/573046086899" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp MAARQ">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.75A9.25 9.25 0 0 0 3.48 16.7L2.25 21l4.45-1.16A9.25 9.25 0 1 0 12 2.75Zm0 16.95a7.66 7.66 0 0 1-3.9-1.05l-.28-.16-2.64.69.7-2.57-.18-.28A7.66 7.66 0 1 1 12 19.7Zm4.23-5.72c-.23-.12-1.37-.68-1.58-.76-.21-.08-.36-.12-.51.12-.15.24-.58.76-.71.92-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.84-1.14-.68-.6-1.14-1.34-1.27-1.57-.13-.23-.01-.36.11-.48.11-.1.24-.27.36-.41.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.51-1.23-.7-1.69-.18-.44-.37-.38-.51-.38h-.44c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84 0 1.09.79 2.14.9 2.29.11.15 1.55 2.37 3.75 3.32.52.23 1.01.36 1.36.46.53.17 1.01.15 1.39.09.42-.06 1.37-.56 1.56-1.1.19-.54.19-1.01.13-1.1-.06-.09-.21-.15-.44-.27Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/maarq.arquitectura_" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram MAARQ">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.25A4.25 4.25 0 1 1 7.75 11.5 4.25 4.25 0 0 1 12 7.25Zm0 2A2.25 2.25 0 1 0 14.25 11.5 2.25 2.25 0 0 0 12 9.25Zm5.25-1.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-stage" aria-hidden="true">
+          <div class="hero-media hero-media--active" style="background-image: url('multimedia/diseño%20de%20entrada%20de%20una%20casa.jpeg');"></div>
+          <div class="hero-media" style="background-image: url('multimedia/patio%20de%20casa.jpeg');"></div>
+          <div class="hero-media" style="background-image: url('multimedia/piscina%20.jpeg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Arquitectura, interiores y narrativa espacial</p>
+          <h1>Espacios que traducen visión, luz y memoria.</h1>
+          <p class="hero-text">
+            Diseñamos residencias, boutiques y ambientes singulares con una mirada contemporánea, cálida y funcional.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#portfolio">Ver proyectos</a>
+            <a class="btn btn-secondary" href="#contact">Contactar</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section reveal-on-scroll">
+        <div class="container">
+          <div class="section-heading reveal-on-scroll">
+            <p class="eyebrow">Portafolio</p>
+            <h2>Proyectos que transforman ideas en experiencias espaciales.</h2>
+            <p>
+              Cada encargo se desarrolla con una mirada integral, cuidando la composición, la atmósfera y la manera en que el espacio se vive.
+            </p>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filtrar proyectos">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Residential">Residencial</button>
+            <button class="filter-btn" data-filter="Comercial">Comercial</button>
+            <button class="filter-btn" data-filter="Interiores">Interiores</button>
+            <button class="filter-btn" data-filter="Paisajismo">Paisajismo</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal-on-scroll" data-category="Residential">
+              <img src="multimedia/dise%C3%B1o%20de%20entrada%20de%20una%20casa.jpeg" alt="Diseño de entrada de una casa" />
+              <div class="project-info">
+                <h3>Entrada de residencia</h3>
+                <p>Corozal, Sucre · 2024 · 180 m²</p>
+                <span>Proyecto residencial enfocado en la bienvenida, el impacto visual y la integración con el paisaje.</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll" data-category="Comercial">
+              <img src="multimedia/tienda%20de%20cosmeticos.jpeg" alt="Tienda de cosméticos" />
+              <div class="project-info">
+                <h3>Boutique cosmética</h3>
+                <p>Sincelejo · 2023 · 95 m²</p>
+                <span>Diseño comercial pensado para destacar la marca, la circulación y la experiencia de compra.</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll" data-category="Interiores">
+              <img src="multimedia/habitacion.jpeg" alt="Habitación" />
+              <div class="project-info">
+                <h3>Suite principal</h3>
+                <p>Corozal · 2022 · 32 m²</p>
+                <span>Interior residencial con propuesta sobria, calidez y aprovechamiento del espacio.</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll" data-category="Paisajismo">
+              <img src="multimedia/patio%20de%20casa.jpeg" alt="Patio de casa" />
+              <div class="project-info">
+                <h3>Patio contemporáneo</h3>
+                <p>Corozal · 2021 · 70 m²</p>
+                <span>Espacio exterior que une descanso, vegetación y funcionalidad para la vida cotidiana.</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll" data-category="Residential">
+              <img src="multimedia/piscina%20.jpeg" alt="Piscina" />
+              <div class="project-info">
+                <h3>Área de piscina</h3>
+                <p>Corozal · 2025 · 140 m²</p>
+                <span>Diseño residencial que integra la piscina con la arquitectura y el entorno.</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll" data-category="Interiores">
+              <img src="multimedia/habitacion2.jpeg" alt="Habitación 2" />
+              <div class="project-info">
+                <h3>Habitación juvenil</h3>
+                <p>Sincelejo · 2024 · 28 m²</p>
+                <span>Proyecto de interiores con estética contemporánea, orden y comodidad.</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt-section reveal-on-scroll">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Sobre nosotros</p>
+            <h2>Arquitectura con criterio, sensibilidad y una lectura profunda del lugar.</h2>
+            <p>
+              En MAARQ entendemos que un espacio no solo debe verse bien, también debe sentirse correcto. Por eso trabajamos con una lectura profunda del lugar, la luz, el uso cotidiano y los materiales para traducir cada idea en una propuesta coherente.
+            </p>
+            <p>
+              Nuestra propuesta combina arquitectura, diseño de interiores y representación visual para que el proceso sea claro, cercano y tangible desde la primera conversación.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Filosofía de diseño</h3>
+            <ul>
+              <li>Diseño funcional y pensado para la vida real.</li>
+              <li>Optimización de luz natural y ventilación.</li>
+              <li>Materiales con carácter, durabilidad y sensibilidad.</li>
+              <li>Propuestas sostenibles y con identidad propia.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section reveal-on-scroll">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Servicios</p>
+            <h2>Soluciones completas para transformar ideas en espacios reales.</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Diseño arquitectónico</h3>
+              <p>Conceptos, anteproyectos, planos y desarrollo de proyectos con enfoque contemporáneo y funcional.</p>
+            </article>
+            <article class="service-card">
+              <h3>Diseño de interiores</h3>
+              <p>Ambientación, distribución, selección de materiales y propuesta visual para que cada espacio se sienta único.</p>
+            </article>
+            <article class="service-card">
+              <h3>Render 3D y visualización</h3>
+              <p>Representaciones claras y atractivas para comunicar conceptos y facilitar decisiones de diseño.</p>
+            </article>
+            <article class="service-card">
+              <h3>Supervisión y acompañamiento</h3>
+              <p>Seguimiento del proceso constructivo para asegurar que la propuesta se materialice con fidelidad.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section alt-section reveal-on-scroll">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Proceso</p>
+            <h2>Un camino claro para llevar tu idea desde la intuición hasta el espacio construido.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <span>01</span>
+              <h3>Entrevista inicial</h3>
+              <p>Exploramos tus necesidades, estilo y objetivos para definir la dirección del proyecto.</p>
+            </div>
+            <div class="process-step">
+              <span>02</span>
+              <h3>Anteproyecto y renders</h3>
+              <p>Desarrollamos la propuesta visual con imágenes 3D para que puedas visualizar el resultado.</p>
+            </div>
+            <div class="process-step">
+              <span>03</span>
+              <h3>Proyecto ejecutivo</h3>
+              <p>Materializamos los planos técnicos y las decisiones constructivas para ejecutar con precisión.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section reveal-on-scroll">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Hablemos de tu próximo proyecto.</h2>
+            <p>
+              Ya sea una vivienda, un local comercial o una reforma de interiores, podemos ayudarte a transformar tu idea en un espacio con identidad.
+            </p>
+            <div class="contact-list">
+              <div class="social-links">
+                <a href="https://wa.me/573046086899" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp MAARQ">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.75A9.25 9.25 0 0 0 3.48 16.7L2.25 21l4.45-1.16A9.25 9.25 0 1 0 12 2.75Zm0 16.95a7.66 7.66 0 0 1-3.9-1.05l-.28-.16-2.64.69.7-2.57-.18-.28A7.66 7.66 0 1 1 12 19.7Zm4.23-5.72c-.23-.12-1.37-.68-1.58-.76-.21-.08-.36-.12-.51.12-.15.24-.58.76-.71.92-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.84-1.14-.68-.6-1.14-1.34-1.27-1.57-.13-.23-.01-.36.11-.48.11-.1.24-.27.36-.41.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.51-1.23-.7-1.69-.18-.44-.37-.38-.51-.38h-.44c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84 0 1.09.79 2.14.9 2.29.11.15 1.55 2.37 3.75 3.32.52.23 1.01.36 1.36.46.53.17 1.01.15 1.39.09.42-.06 1.37-.56 1.56-1.1.19-.54.19-1.01.13-1.1-.06-.09-.21-.15-.44-.27Z"/>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/maarq.arquitectura_" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram MAARQ">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.25A4.25 4.25 0 1 1 7.75 11.5 4.25 4.25 0 0 1 12 7.25Zm0 2A2.25 2.25 0 1 0 14.25 11.5 2.25 2.25 0 0 0 12 9.25Zm5.25-1.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+                  </svg>
+                </a>
+              </div>
+              <span>Ubicación: Corozal, Sucre</span>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Correo
+              <input type="email" name="email" placeholder="tucorreo@email.com" required />
+            </label>
+            <label>
+              Teléfono
+              <input type="tel" name="phone" placeholder="Tu teléfono" required />
+            </label>
+            <label>
+              Tu idea
+              <textarea name="message" rows="4" placeholder="Cuéntanos brevemente qué deseas crear" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
