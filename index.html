@@ -11,10 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+     <link rel="icon" href="multimedia/logo.jpeg" />
+     <meta name="author" content="MAARQ Arquitectura" />
+     <meta name="keywords" content="arquitectura, diseño de interiores, render, Corozal, Sucre" />
+     <meta property="og:title" content="MAARQ Arquitectura — Espacios con visión" />
+     <meta property="og:description" content="Estudio en Corozal que diseña residencias, boutique comerciales e interiores con foco en la luz y la materialidad." />
+     <meta property="og:image" content="multimedia/dise%C3%B1o%20de%20entrada%20de%20una%20casa.jpeg" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="http://localhost:8000/" />
   </head>
   <body>
     <header class="site-header">
@@ -48,11 +56,9 @@
 
     <main id="home">
       <section class="hero">
-        <div class="hero-stage" aria-hidden="true">
-          <div class="hero-media hero-media--active" style="background-image: url('multimedia/diseño%20de%20entrada%20de%20una%20casa.jpeg');"></div>
-          <div class="hero-media" style="background-image: url('multimedia/patio%20de%20casa.jpeg');"></div>
-          <div class="hero-media" style="background-image: url('multimedia/piscina%20.jpeg');"></div>
-        </div>
+        <video class="hero-video" autoplay muted loop playsinline poster="multimedia/diseño%20de%20entrada%20de%20una%20casa.jpeg" aria-hidden="true">
+          <source src="multimedia/video.mp4" type="video/mp4" />
+        </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
           <p class="eyebrow">Arquitectura, interiores y narrativa espacial</p>
@@ -87,7 +93,7 @@
 
           <div class="projects-grid">
             <article class="project-card reveal-on-scroll" data-category="Residential">
-              <img src="multimedia/dise%C3%B1o%20de%20entrada%20de%20una%20casa.jpeg" alt="Diseño de entrada de una casa" />
+              <img src="multimedia/dise%C3%B1o%20de%20entrada%20de%20una%20casa.jpeg" alt="Diseño de entrada de una casa" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Entrada de residencia</h3>
                 <p>Corozal, Sucre · 2024 · 180 m²</p>
@@ -96,7 +102,7 @@
             </article>
 
             <article class="project-card reveal-on-scroll" data-category="Comercial">
-              <img src="multimedia/tienda%20de%20cosmeticos.jpeg" alt="Tienda de cosméticos" />
+              <img src="multimedia/tienda%20de%20cosmeticos.jpeg" alt="Tienda de cosméticos" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Boutique cosmética</h3>
                 <p>Sincelejo · 2023 · 95 m²</p>
@@ -105,7 +111,7 @@
             </article>
 
             <article class="project-card reveal-on-scroll" data-category="Interiores">
-              <img src="multimedia/habitacion.jpeg" alt="Habitación" />
+              <img src="multimedia/habitacion.jpeg" alt="Habitación" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Suite principal</h3>
                 <p>Corozal · 2022 · 32 m²</p>
@@ -114,7 +120,7 @@
             </article>
 
             <article class="project-card reveal-on-scroll" data-category="Paisajismo">
-              <img src="multimedia/patio%20de%20casa.jpeg" alt="Patio de casa" />
+              <img src="multimedia/patio%20de%20casa.jpeg" alt="Patio de casa" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Patio contemporáneo</h3>
                 <p>Corozal · 2021 · 70 m²</p>
@@ -123,7 +129,7 @@
             </article>
 
             <article class="project-card reveal-on-scroll" data-category="Residential">
-              <img src="multimedia/piscina%20.jpeg" alt="Piscina" />
+              <img src="multimedia/piscina%20.jpeg" alt="Piscina" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Área de piscina</h3>
                 <p>Corozal · 2025 · 140 m²</p>
@@ -132,7 +138,7 @@
             </article>
 
             <article class="project-card reveal-on-scroll" data-category="Interiores">
-              <img src="multimedia/habitacion2.jpeg" alt="Habitación 2" />
+              <img src="multimedia/habitacion2.jpeg" alt="Habitación 2" loading="lazy" decoding="async" role="button" tabindex="0" />
               <div class="project-info">
                 <h3>Habitación juvenil</h3>
                 <p>Sincelejo · 2024 · 28 m²</p>
@@ -202,17 +208,26 @@
           </div>
           <div class="process-grid">
             <div class="process-step">
-              <span>01</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 4a2 2 0 0 1 2 2v1h1a2 2 0 0 1 0 4h-1v1a2 2 0 1 1-4 0v-1H9a2 2 0 1 1 0-4h1V6a2 2 0 0 1 2-2Zm0 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+              </div>
+              <span class="process-number">01</span>
               <h3>Entrevista inicial</h3>
               <p>Exploramos tus necesidades, estilo y objetivos para definir la dirección del proyecto.</p>
             </div>
             <div class="process-step">
-              <span>02</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm2 3v2h10V7H7Zm0 4v2h6v-2H7Z"/></svg>
+              </div>
+              <span class="process-number">02</span>
               <h3>Anteproyecto y renders</h3>
               <p>Desarrollamos la propuesta visual con imágenes 3D para que puedas visualizar el resultado.</p>
             </div>
             <div class="process-step">
-              <span>03</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2 4v10h8V7H8Z"/></svg>
+              </div>
+              <span class="process-number">03</span>
               <h3>Proyecto ejecutivo</h3>
               <p>Materializamos los planos técnicos y las decisiones constructivas para ejecutar con precisión.</p>
             </div>
@@ -266,6 +281,28 @@
         </div>
       </section>
     </main>
+
+    <!-- Lightbox / modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close="true"></div>
+      <div class="lightbox-panel" role="dialog" aria-modal="true">
+        <button class="lightbox-close" aria-label="Cerrar">×</button>
+        <button class="lightbox-prev" aria-label="Anterior">‹</button>
+        <div class="lightbox-content">
+          <img src="" alt="" />
+          <p class="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-next" aria-label="Siguiente">›</button>
+      </div>
+    </div>
+
+    
+
+    <a href="https://wa.me/573046086899" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.75A9.25 9.25 0 0 0 3.48 16.7L2.25 21l4.45-1.16A9.25 9.25 0 1 0 12 2.75Zm0 16.95a7.66 7.66 0 0 1-3.9-1.05l-.28-.16-2.64.69.7-2.57-.18-.28A7.66 7.66 0 1 1 12 19.7Zm4.23-5.72c-.23-.12-1.37-.68-1.58-.76-.21-.08-.36-.12-.51.12-.15.24-.58.76-.71.92-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.84-1.14-.68-.6-1.14-1.34-1.27-1.57-.13-.23-.01-.36.11-.48.11-.1.24-.27.36-.41.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.51-1.23-.7-1.69-.18-.44-.37-.38-.51-.38h-.44c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84 0 1.09.79 2.14.9 2.29.11.15 1.55 2.37 3.75 3.32.52.23 1.01.36 1.36.46.53.17 1.01.15 1.39.09.42-.06 1.37-.56 1.56-1.1.19-.54.19-1.01.13-1.1-.06-.09-.21-.15-.44-.27Z"/>
+      </svg>
+    </a>
 
     <script src="script.js"></script>
   </body>
